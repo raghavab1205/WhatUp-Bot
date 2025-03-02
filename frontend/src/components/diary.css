@@ -1,0 +1,58 @@
+.diary-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ruled-paper {
+  width: 380px;
+  height: 480px;
+  margin: 10px;
+  padding: 40px;
+  background: repeating-linear-gradient(
+    white 0px,
+    white 22px,
+    blue 23px
+  );
+  border: 1px solid black;
+  box-shadow: 0px 0px 20px 10px rgba(4, 245, 4, 0.1);
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ruled-paper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 2px;
+  height: 100%;
+  background-color: red;
+}
+
+.content {
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.diary-textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  line-height: 23px;
+  resize: none;
+  font-family: "Patrick Hand", cursive;
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-height: 460px;
+  overflow: hidden;
+}

@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./backend/config",
+        "./backend/controller"
+    ]
+}
