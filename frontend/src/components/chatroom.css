@@ -1,0 +1,90 @@
+/* Container and overall theme */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+    height: 75vh;
+    background: linear-gradient(to bottom, #121212, #1c1c1c);
+    color: white;
+    font-family: "Patrick Hand", cursive;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 10px rgba(4, 245, 4, 0.1);
+  }
+  
+  /* Header with title and role info */
+  .chat-header {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid green;
+  }
+  
+  /* Message list */
+  .chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #444;
+    background: #1e1e1e;
+    border-radius: 8px;
+  }
+  
+  /* Individual message styles */
+  .chat-message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    background: #2a2a2a;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+  
+  .chat-message.patient {
+    align-self: flex-start;
+    background: #2a2a2a;
+  }
+  
+  .chat-message.doctor {
+    align-self: flex-end;
+    background: #3a3a3a;
+  }
+  
+  .chat-message-role {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* Chat input area */
+  .chat-input-container {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #1e1e1e;
+    color: white;
+    font-family: inherit;
+    resize: none;
+  }
+  
+  .chat-send-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .chat-send-button:hover {
+    background-color: #45a049;
+  }
+  

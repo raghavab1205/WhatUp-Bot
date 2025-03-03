@@ -1,0 +1,54 @@
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Optional background */
+}
+
+/* Updated header: using flex-direction: column to stack title and subtitle */
+.header {
+    position: absolute;
+    top: 20px;  /* Keeps title and subtitle at the top */
+    width: 100%;
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white !important;
+    text-align: center;
+    white-space: nowrap; /* Prevents text wrapping */
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    background: linear-gradient(to right, #1c211d, rgb(1, 64, 1), #1c211d);
+    padding: 10px 20px; /* Added left-right padding for spacing */
+    font-size: 2rem;
+    display: inline-block; /* Ensures it only takes as much space as needed */
+    margin: 0 auto; /* Centers the block if inside a flex container */
+}
+
+.subtitle {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px; /* Space between title and subtitle */
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row; /* Keeps buttons side by side */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+}
+
+.homepageButtons {
+    background-color: #4caf50 !important;
+    color: white !important;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
